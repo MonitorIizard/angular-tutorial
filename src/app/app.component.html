@@ -10,7 +10,12 @@
   </p>
 
   <div>
-  <app-button>+</app-button>
+  <app-button
+    type="+"
+    (dif)="onDif($event)">+</app-button>
+  <app-button
+    type="-"
+    (dif)="onDif($event)">-</app-button>
   <app-button><span class="bg-red-500">Hello world</span></app-button>
   </div>
 </div>

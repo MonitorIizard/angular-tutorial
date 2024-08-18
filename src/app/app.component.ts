@@ -29,4 +29,8 @@ export class AppComponent {
       this.number -= 1;
     }
   }
+
+  onDif(event : any) {
+    console.log('event : ' + event)
+  }
 }
