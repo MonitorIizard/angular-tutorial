@@ -7,14 +7,8 @@
   <p class="font-italic">
     ngClass solve the problem of duplicated class name.
   </p>
-  <button
-    [ngClass]="btn"
-    class="bg-green-400"
-    [class.bg-green-700]="number>5"
-    (click)="changeNumber('+')"> + </button>
-  <button
-    [ngClass]="btn"
-    class="bg-red-400 disabled:bg-red-200"
-    [disabled]="number>5"
-    (click)="changeNumber('-')"> - </button>
+
+  <div>
+  <app-button/>
+  </div>
 </div>
