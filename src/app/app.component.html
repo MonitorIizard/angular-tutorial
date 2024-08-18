@@ -4,6 +4,15 @@
 
   <h1>number == {{number}}</h1>
 
-  <button (click)="changeNumber('+')"> + </button>
-  <button (click)="changeNumber('-')"> - </button>
+  <p class="font-italic">
+    ngClass solve the problem of duplicated class name.
+  </p>
+  <button
+    [ngClass]="btn"
+    class="bg-green-400"
+    (click)="changeNumber('+')"> + </button>
+  <button
+    [ngClass]="btn"
+    class="bg-red-400"
+    (click)="changeNumber('-')"> - </button>
 </div>
