@@ -1,5 +1,8 @@
 <div>
   <h1 class=""> {{title}}</h1>
+
+  <h1>timer : {{timer}}</h1>
+
   <img [src]="imgURL" alt="">
   <app-img [imgURL]="omegaSquadFizzPic"/>
 
@@ -18,5 +21,8 @@
     (dif)="onDif($event)">-</app-button>
 
   <app-button><span class="bg-red-500">Hello world</span></app-button>
-  </div>
+    <app-button
+      routerLink="members"
+    >Members</app-button>
+</div>
 </div>
